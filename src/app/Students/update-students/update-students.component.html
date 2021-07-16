@@ -1,0 +1,42 @@
+<div class="pg-title">
+    <h1 class="title ">Update Students Info </h1>
+  </div>
+  
+  
+  <div class="container col-sm-12 col-lg-7 col-md-7 col-xl-7 mt-5 table">
+    <div class="card">
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" 
+         #name="ngModel"  name="name"   [(ngModel)] = "info.name"  placeholder="Name" required 
+
+            minlength = "3">
+            <div class="alert alert-danger" *ngIf="name.touched && name.invalid"> please enter valid name</div>
+          
+          </div>
+  
+          <div class="form-group">
+            <label>Level</label>
+            <input type="text" class="form-control"   
+            #level="ngModel" minlength = "3" required    name="level" [(ngModel)] = "info.level"   type="text" class="form-control" placeholder="Level">
+         
+            <div class="alert alert-danger" *ngIf="level.touched && level.invalid"> please enter valid Level</div>
+          </div>
+          <div class="form-group">
+            <label>id</label>
+            <input type="text" class="form-control"   
+            #id="ngModel" minlength = "1" required    name="id" [(ngModel)] = "info.id"  type="text" class="form-control" placeholder="id">
+         
+            <div class="alert alert-danger" *ngIf="id.touched && id.invalid"> please enter valid id</div>
+          </div>
+          <button (click) = "update()" class="btn btn-info btn-block">Send</button>
+          
+         
+        </form>
+  
+      </div>
+    </div>
+  </div>
+  

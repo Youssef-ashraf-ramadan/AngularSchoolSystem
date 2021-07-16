@@ -1,0 +1,29 @@
+
+@font-face{
+    src: url(/src/assets/fonts/BalooTammudu2-Regular.ttf);
+    font-family: 'Baloo';
+}
+@font-face{
+    src: url(/src/assets/fonts/Ubuntu-Regular.ttf);
+    font-family: 'Ubuntu';
+}
+
+.pg-title .title{
+    font-family: 'Baloo';
+    font-size: 35px;
+    text-align: center;
+    color:white;
+    background-color: #3450A1;
+    height: 1200px;
+}
+
+.card{
+    margin-top: -1100px;
+    background-color: #04195595 ;
+}
+.card input{
+    background-color: #04195595 ;
+}
+label{
+    color: white;
+}

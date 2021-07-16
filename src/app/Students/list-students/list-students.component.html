@@ -1,0 +1,25 @@
+<div class="container col-sm-12 col-lg-7 col-xl-7 col-md-7 mt-5 table">
+  <div class="card">
+    <div class="card-body">
+      <table class="table table-dark">
+        <tr>
+          <th> ID </th>
+          <th>Name</th>
+          <th>Level</th>
+          <th colspan="2">Action</th>
+        </tr>
+
+        <tr *ngFor="let StudentsData of StudentsData">
+          <td> {{StudentsData.id}}</td>
+          <td> {{StudentsData.name}}</td>
+          <td>{{StudentsData.level}}</td>
+          <td>    <button (click)="delete(StudentsData.id)" class=" btn btn-danger">Delete</button> </td>
+          <td>    <a  class=" btn btn-info"  routerLink = "{{StudentsData.id}}" >Update   </a> </td>
+        </tr>
+
+    
+      </table>
+
+    </div>
+  </div>
+</div>

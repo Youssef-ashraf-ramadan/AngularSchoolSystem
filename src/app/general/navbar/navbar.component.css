@@ -1,0 +1,19 @@
+.navbar{
+    background-color: #3450A1 !important;
+  
+}
+.dropdown-toggle{
+    color:white !important;
+}
+.active{
+    color:white !important;
+}
+.nav-link{
+    color:white !important;
+}
+.navbar ul li a {
+    font-family: 'Baloo';
+}
+.navbar-brand{
+    color : white;
+}
